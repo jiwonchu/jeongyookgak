@@ -13,4 +13,13 @@ window.onload = function () {
             
         },
 })
+let menuBar = $('.menubar');
+let all_Menu = $('.all-menu');
+let Close = $('.menubar-close');
+all_Menu.click(function(){
+    menuBar.addClass('open')
+})
+Close.click(function(){
+    menuBar.removeClass('open')
+})
 };

@@ -86,8 +86,11 @@ body {
     height: 100%;
     background-color: #fff;
     z-index: 99999;
+    transition: all 0.3s;
 }
-
+.menubar.open{
+    right: 0;
+}
 .menubar-top{
     position: relative;
     display: block;
