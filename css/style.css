@@ -76,20 +76,122 @@ body {
 }
 
 /* menubar */
+
 .menubar{
     position: fixed;
     top: 0;
-    right: 0;
-    display: none;
+    right: -460px;
+    display: block;
     width: 460px;
     height: 100%;
     background-color: #fff;
     z-index: 99999;
-    padding: 20px;
+}
+
+.menubar-top{
+    position: relative;
+    display: block;
+    padding: 20px 20px 0 20px;
+}
+.menubar-top h2{
+    position: relative;
+    display: block;
+    float: left;
+    font-size: 24px;
+    margin-top: 6px;
+}
+.menubar-nav{
+    position: relative;
+    display: block;
+    float: right;
+
+}
+.menubar-kart{
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../images/kart.svg) no-repeat center;
+    background-size: cover;
+    float: left;
+}
+.menubar-close{
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../images/close.svg) no-repeat center;
+    background-size: cover;
+    float: left;
+    margin-left: 8px;
+}
+.menubar-middle{
+    position: relative;
+    display: block;
+    margin-top: 32px;
+    padding: 0 20px;
+    
+}
+.menubar-middle p{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.menubar-middle ul{
+    display: table;
+    width: 100%;
+}
+.menubar-middle ul  li{
+    display: table-cell;
+    text-align: center;
+}
+.menubar-middle ul li p{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+.menubar-bottom{
+    position: relative;
+    display: block;
+    border-top: 1px solid #e0e0e0;
+    padding: 0 20px;
+}
+.menubar-bottom h5{
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.menubar-bottom h5:last-child{
+    margin-top: 40px;
 }
 
 
-
+/* 반응형 */
+@media all and (max-width:800px){
+    .menubar{
+        width: 60vw;
+    }
+    .menubar-middle p{
+        white-space: nowrap;
+    }
+}
+@media all and (max-width:550px){
+    .menubar-top h2{
+        font-size: 20px;
+    }
+    .menubar-kart,
+    .menubar-close{
+        width: 8vw;
+    }
+    .menubar-middle li a p{
+        font-size: 14px;
+    }
+    .menubar-bottom h5{
+        font-size: 16px;
+    }
+}
 /* 헤더영역 */
 .header {
     display: block;

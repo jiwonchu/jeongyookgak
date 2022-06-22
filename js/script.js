@@ -12,8 +12,5 @@ window.onload = function () {
             prevEl: ".sw-cb-prev",
             
         },
-
-
-
-    })
+})
 };
