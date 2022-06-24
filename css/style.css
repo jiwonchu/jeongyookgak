@@ -245,19 +245,23 @@ body {
 .header {
     display: block;
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 96px;
     background-color: #000;
     z-index: 99998;
+
 
 }
 
 .header-fix {
     position: fixed;
     left: 0;
-    top: 0;
+    top: ;
     width: 100%;
     height: 96px;
+
 
 }
 
@@ -429,6 +433,7 @@ body {
 .visual {
     display: block;
     position: relative;
+    /* margin-top: 96px; */
 }
 
 .visual .inner {
@@ -694,7 +699,15 @@ body {
     object-fit: cover;
 
 }
-
+.best-list-tag{
+    position:absolute;
+    left: 15px;
+    top: 15px;
+    width: 75px;
+    height: 30px;
+    background: url(../images/무항생제.svg)no-repeat center;
+    background-size: contain;
+}
 .best-list-gnb li div i {
     position: absolute;
     bottom: 10px;
@@ -805,7 +818,15 @@ body {
         font-size: 14px;
     }
 }
+@media all and (max-width:700px) {
+    .best-list-tag{
+        left: 2vw;
+        top: 2vw;
+        width: 10vw;
+        height: 5vw;
 
+    }
+}
 @media all and (max-width:620px) {
     .best-list h2 {
         font-size: 20px;
