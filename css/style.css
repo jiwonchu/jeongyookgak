@@ -61,11 +61,13 @@ body {
     width: 100%;
     height: 60px;
     display: block;
-    background-image: radial-gradient(circle at 50% 527%,#ff896a,#e23000 119%);
+    background-image: radial-gradient(circle at 50% 527%, #ff896a, #e23000 119%);
 }
-.top-none{
+
+.top-none {
     display: none;
 }
+
 .top .inner a {
     width: 100%;
     max-width: 1180px;
@@ -75,31 +77,36 @@ body {
     background: url(../images/탑배너광고.png) no-repeat center;
     background-size: contain;
 }
-.top-close{
+
+.top-close {
     float: right;
     width: 60px;
     height: 60px;
     cursor: pointer;
 }
-@media all and (max-width:1100px){
-.top{
-    height: 7vw;
-}
+
+@media all and (max-width:1100px) {
+    .top {
+        height: 7vw;
+    }
+
     .top .inner a {
-    width: 100vw;
-    height: 7vw;
+        width: 100vw;
+        height: 7vw;
+    }
+
+    .top-close {
+        width: 7vw;
+        height: 7vw;
+    }
 }
-.top-close{
-    width: 7vw;
-    height: 7vw;
-}
-}
+
 /* menubar */
 
-.menubar{
+.menubar {
     position: fixed;
     top: 0;
-    right: -460px;
+    right: -500px;
     display: block;
     width: 460px;
     height: 100%;
@@ -107,28 +114,33 @@ body {
     z-index: 99999;
     transition: all 0.3s;
 }
-.menubar.open{
+
+.menubar.open {
     right: 0;
 }
-.menubar-top{
+
+.menubar-top {
     position: relative;
     display: block;
     padding: 20px 20px 0 20px;
 }
-.menubar-top h2{
+
+.menubar-top h2 {
     position: relative;
     display: block;
     float: left;
     font-size: 24px;
     margin-top: 6px;
 }
-.menubar-nav{
+
+.menubar-nav {
     position: relative;
     display: block;
     float: right;
 
 }
-.menubar-kart{
+
+.menubar-kart {
     position: relative;
     display: block;
     width: 48px;
@@ -137,7 +149,8 @@ body {
     background-size: cover;
     float: left;
 }
-.menubar-close{
+
+.menubar-close {
     position: relative;
     display: block;
     width: 48px;
@@ -147,73 +160,87 @@ body {
     float: left;
     margin-left: 8px;
 }
-.menubar-middle{
+
+.menubar-middle {
     position: relative;
     display: block;
     margin-top: 32px;
     padding: 0 20px;
-    
+
 }
-.menubar-middle p{
+
+.menubar-middle p {
     position: relative;
     display: block;
     font-size: 18px;
     margin-bottom: 24px;
 }
-.menubar-middle ul{
+
+.menubar-middle ul {
     display: table;
     width: 100%;
 }
-.menubar-middle ul  li{
+
+.menubar-middle ul li {
     display: table-cell;
     text-align: center;
 }
-.menubar-middle ul li p{
+
+.menubar-middle ul li p {
     position: relative;
     display: block;
     font-size: 18px;
     text-align: center;
 }
-.menubar-bottom{
+
+.menubar-bottom {
     position: relative;
     display: block;
     border-top: 1px solid #e0e0e0;
     padding: 0 20px;
 }
-.menubar-bottom h5{
+
+.menubar-bottom h5 {
     margin-top: 20px;
     font-size: 18px;
     cursor: pointer;
 }
-.menubar-bottom h5:last-child{
+
+.menubar-bottom h5:last-child {
     margin-top: 40px;
 }
 
 
 /* 반응형 */
-@media all and (max-width:800px){
-    .menubar{
+@media all and (max-width:800px) {
+    .menubar {
         width: 60vw;
     }
-    .menubar-middle p{
+
+    .menubar-middle p {
         white-space: nowrap;
     }
 }
-@media all and (max-width:550px){
-    .menubar-top h2{
+
+@media all and (max-width:550px) {
+    .menubar-top h2 {
         font-size: 20px;
     }
+
     .menubar-kart,
-    .menubar-close{
+    .menubar-close {
         width: 8vw;
     }
-    .menubar-middle li a p{
+
+    .menubar-middle li a p {
         font-size: 14px;
     }
-    .menubar-bottom h5{
+
+    .menubar-bottom h5 {
         font-size: 16px;
     }
 }
+
 /* 헤더영역 */
 .header {
     display: block;
@@ -222,16 +249,18 @@ body {
     height: 96px;
     background-color: #000;
     z-index: 99998;
-    
+
 }
-.header-fix{
+
+.header-fix {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 96px;
-    
+
 }
+
 .header .inner {
     position: relative;
     width: 100%;
@@ -347,6 +376,55 @@ body {
 
 }
 
+@media all and (max-width:1200px) {
+
+    .nav-right {
+        right: 2%;
+    }
+}
+
+@media all and (max-width:800px) {
+    .header {
+        height: 13vw;
+    }
+
+    .header-fix {
+        height: 13vw;
+    }
+
+    .logo {
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .gnb {
+        display: none;
+    }
+
+    .right-gnb {
+        display: none;
+    }
+}
+
+@media all and (max-width:650px) {
+    .logo {
+        width: 20vw;
+        height: 7.5vw;
+    }
+
+    .kart {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .all-menu {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+}
+
+
+
 /* visual */
 .visual {
     display: block;
@@ -362,7 +440,16 @@ body {
     background: url(../images/main_firstgift_logout-2x.c68c3a7.png) no-repeat center;
     background-size: cover;
     cursor: pointer;
-    
+
+}
+
+@media all and (max-width:1200px) {
+
+    .visual .inner {
+        width: auto;
+        height: 100%;
+        padding: 20%;
+    }
 }
 
 /* c-b */
@@ -498,13 +585,15 @@ body {
     float: left;
     margin-top: 4px;
 }
-.right-cb{
+
+.right-cb {
     position: relative;
     display: block;
     width: 100%;
     max-width: 600px;
     height: 176px;
 }
+
 .right-cb a {
     position: relative;
     display: block;
@@ -513,6 +602,36 @@ body {
     background: url(../images/freshplan.9fe4775.png)no-repeat center;
     background-size: cover;
     border-left: 1px solid #eaeaea;
+}
+
+@media all and (max-width:1050px) {
+    .cb {
+        height: 40vw !important;
+    }
+
+    .cb .left-cb {
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        height: 20vw;
+    }
+
+    .sw-cb-control {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+
+    .cb .right-cb {
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        height: 20vw;
+    }
+
+    .right-cb a {
+        height: 100%;
+    }
 }
 
 
@@ -546,6 +665,7 @@ body {
 .best-list-gnb li:nth-child(3) {
     margin-right: 0;
 }
+
 .best-list-gnb li:nth-child(6) {
     margin-right: 0;
 }
@@ -612,151 +732,123 @@ body {
     font-weight: normal;
     white-space: nowrap;
 }
+
 /* PC버전 */
 /* 모바일버전 */
-@media all and (max-width:1200px){
+@media all and (max-width:1200px) {
 
-    .nav-right{
-        right: 2%;
-    }
-    .visual .inner{
-        width: auto;
-        height: 100%;
-        padding: 20%;
-    }
-    .best-list h2{
+    .best-list h2 {
         padding-left: 3.6%;
     }
-    .best-list-gnb > li{
+
+    .best-list-gnb>li {
         width: 46.5%;
         margin-right: 3%;
         padding: 0 1.6%;
     }
+
     .best-list-gnb li:nth-child(1) {
         margin-left: 2%;
     }
+
     .best-list-gnb li:nth-child(2) {
         margin-right: 0;
     }
+
     .best-list-gnb li:nth-child(3) {
         margin-right: 3%;
         margin-left: 2%;
     }
+
     .best-list-gnb li:nth-child(4) {
         margin-right: 0;
     }
+
     .best-list-gnb li:nth-child(5) {
         margin-right: 3%;
         margin-left: 2%;
     }
+
     .best-list-gnb li:nth-child(6) {
         margin-right: 0;
     }
-    .best-list-gnb li div{
+
+    .best-list-gnb li div {
         height: 34vw;
         padding-top: 5.8%;
     }
-    .best-list-gnb li a img{
+
+    .best-list-gnb li a img {
         width: 90%;
     }
-    .best-list-gnb li div i{
+
+    .best-list-gnb li div i {
         width: 5.6vw;
         height: 5.6vw;
     }
-    .shopping .inner .img{
-        height: 17.3vw !important;
-    }
 }
-@media all and (max-width:1050px){
-    .cb{
-        height: 40vw !important;
-    }
-    .cb .left-cb{
-        display: block;
-        width: 100%;
-        max-width: 1000px;
-        height: 20vw;
-    }
-    .sw-cb-control{
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-    }
-    .cb .right-cb{
-        display: block;
-        width: 100%;
-        max-width: 1000px;
-        height: 20vw;
-    }
-    .right-cb a{
-        height: 100%;
-    } 
-    .best-list h2{
+
+@media all and (max-width:1050px) {
+
+    .best-list h2 {
         font-size: 25px;
     }
 }
-@media all and (max-width:800px){
 
-    .gnb{
-        display: none;
-    }
-    .right-gnb{
-        display:none;
-    }
-    .logo{
-        top:50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-    .best-list-gnb li a p{
+@media all and (max-width:800px) {
+
+    .best-list-gnb li a p {
         font-size: 16px;
     }
-    .best-list-gnb li a p span{
+
+    .best-list-gnb li a p span {
         font-size: 14px;
     }
 }
-@media all and (max-width:620px){
-    .best-list h2{
+
+@media all and (max-width:620px) {
+    .best-list h2 {
         font-size: 20px;
     }
+
     .best-list-gnb li a p {
         font-size: 13px;
     }
-    .best-list-gnb li a p  span{
+
+    .best-list-gnb li a p span {
         font-size: 10px;
     }
 
 }
-@media all and (max-width:500px){
-    .logo{
-        width: 26vw;
-    }
-    .nav-right .kart{
-        width: 10vw;
-    }
-    .nav-right .all-menu{
-        width: 10vw;
-    }
-    .best-list h2{
+
+@media all and (max-width:500px) {
+
+
+    .best-list h2 {
         font-size: 15px;
     }
+
     .best-list-gnb li a p {
         font-size: 10px;
     }
-    .best-list-gnb li a p  span{
+
+    .best-list-gnb li a p span {
         font-size: 8px;
     }
 }
+
 /* shopping */
 .shopping {
     display: block;
     position: relative;
 }
-.shopping .inner{
+
+.shopping .inner {
     width: 100%;
     max-width: 1200px;
 }
-.shopping .inner .img{
+
+.shopping .inner .img {
     display: block;
     position: relative;
     background: url(../images/banner_shop.96086e0.png)no-repeat center;
@@ -765,6 +857,13 @@ body {
     height: 208px;
     cursor: pointer;
     margin: 0 auto;
+}
+
+@media all and (max-width:1200px) {
+
+    .shopping .inner .img {
+        height: 17.3vw !important;
+    }
 }
 
 /* footer */
@@ -942,41 +1041,46 @@ body {
 .footer-bottom-copy button:first-child {
     margin-right: 0;
 }
-@media all and (max-width:1200px){
-    .footer{
+
+@media all and (max-width:1200px) {
+    .footer {
         margin-top: 12.5vw;
     }
 }
-@media all and (max-width:620px){
-    .footer-bottom-left{
+
+@media all and (max-width:620px) {
+    .footer-bottom-left {
         display: none;
     }
-    .footer-bottom-right{
-        
-        
-    }
+
+    .footer-bottom-right {}
 }
-@media all and (max-width:500px){
-    .footer-bottom-right{
+
+@media all and (max-width:500px) {
+    .footer-bottom-right {
         width: 150px;
         margin: 0 auto;
         float: none;
         text-align: center;
-        
+
     }
-    .footer-top-left{
+
+    .footer-top-left {
         display: none;
     }
-    .footer-top-right{
+
+    .footer-top-right {
         width: 250px;
         float: none;
         margin: 0 auto;
         text-align: center;
     }
-    .footer-bottom-copy p{
+
+    .footer-bottom-copy p {
         display: none;
     }
-    .footer-bottom-copy{
+
+    .footer-bottom-copy {
         width: 200px;
         margin: 0 auto;
     }
