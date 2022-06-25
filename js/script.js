@@ -1,7 +1,6 @@
 $(document).ready();
 window.onload = function () {
     new Swiper('.sw-cb', {
-        loop: true,
         speed: 500,
         pagination: {
             el: ".swiper-pagination",
@@ -34,10 +33,10 @@ window.onload = function () {
     let Header = $('.header');
     let temp = $(window).scrollTop();
 
-    if (temp > 0) {
+    if (temp > 60) {
         Header.addClass('header-fix')
     };
-    if (temp == 0) {
+    if (temp < 61) {
         Header.removeClass('header-fix')
     };
 });
