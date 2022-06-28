@@ -1,4 +1,5 @@
 $(document).ready();
+
 window.onload = function () {
     new Swiper('.sw-cb', {
         speed: 500,
@@ -21,26 +22,13 @@ window.onload = function () {
     Close.click(function () {
         menuBar.removeClass('open')
     });
-    
+
+
     let top_Close = $('.top-close');
     let top = $('.top');
-    
     top_Close.click(function () {
         top.addClass('top-none')
-    });
-    
-    $(window).scroll(function(){
-    let Header = $('.header');
-    let temp = $(window).scrollTop();
 
-    if (temp > 60) {
-        Header.addClass('header-fix')
-    };
-    if (temp < 61) {
-        Header.removeClass('header-fix')
-    };
-});
+    });
 
 };
-
-
