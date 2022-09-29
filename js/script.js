@@ -1,6 +1,22 @@
 $(document).ready();
 
 window.onload = function () {
+
+          const modal = $(".modal");
+          const modalClose = $(".modal-close");
+          const modalWrap = $(".modal-wrap");
+          modal.click(function () {
+            modal.fadeOut(500);
+            $("body").css("overflow", "auto");
+          });
+          modalClose.click(function () {
+            modal.fadeOut(500);
+            $("body").css("overflow", "auto");
+          });
+          modalWrap.click(function (event) {
+            event.stopPropagation();
+          });
+
     new Swiper('.sw-cb', {
         speed: 500,
         pagination: {
